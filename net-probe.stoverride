@@ -1,6 +1,5 @@
 name: NetProbe
 category: Test
-desc : ｜- 测试流媒体、AI是否连通
 icon:https://cdn.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Available_1.png
 tiles:
   - name: ChatGPT-Web-Check
