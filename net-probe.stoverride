@@ -1,0 +1,47 @@
+name: Collapsed Tiles Example
+
+tiles:
+  - name: ChatGPT-Web-Check
+    title: ChatGPT Web
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
+    collapsed: true
+    url: https://chatgpt.com
+  - name: ChatGPT-App-Check
+    title: ChatGPT App
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
+    collapsed: true
+    url: https://chatgpt.com
+  - name: YouTube-Check
+    title: YouTube
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/youtube.png
+    collapsed: true
+    url: https://www.youtube.com
+  - name: Netflix-Check
+    title: Netflix
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/netflix.png
+    collapsed: true
+    url: https://www.netflix.com
+  - name: Disney-Check
+    title: Disney
+    icon: https://www.disneyplus.com/favicon.ico
+    collapsed: true
+    url: https://www.disney.com
+  - name: Gemini-Check
+    title: Gemini
+    icon: https://www.gstatic.com/images/branding/product/1x/gemini_48dp.png
+    collapsed: true
+    url: https://gemini.google.com
+
+script-providers:
+  ChatGPT-Web-Check:
+    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/chatgpt-web.js
+  ChatGPT-App-Check:
+    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/chatgpt-app.js
+  YouTube-Check:
+    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/youtube.js
+  Netflix-Check:
+    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/netflix.js
+  Disney-Check:
+    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/disney.js
+  Gemini-Check:
+    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/gemini.js
