@@ -1,6 +1,6 @@
 name: NetProbe
 category: Test
-icon:https://cdn.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Available_1.png
+icon: https://cdn.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Available_1.png
 tiles:
   - name: ChatGPT-Web-Check
     title: ChatGPT Web
