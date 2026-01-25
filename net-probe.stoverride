@@ -1,5 +1,6 @@
 name: NetProbe
 category: Test
+desc: ｜- 测试流媒体、AI是否连通
 tiles:
   - name: ChatGPT-App-Check
     title: ChatGPT App
