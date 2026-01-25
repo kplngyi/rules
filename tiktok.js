@@ -1,5 +1,5 @@
 async function request(method, params) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const httpMethod = $httpClient[method.toLowerCase()];
     httpMethod(params, (error, response, data) => {
       resolve({ error, response, data });
@@ -8,12 +8,11 @@ async function request(method, params) {
 }
 
 async function main() {
-  const { error, response, data } = await request(
-    "GET",
-    "https://www.tiktok.com"
-  );
+  const { error, response } = await request("GET", {
+    url: "https://www.openai.com",
+  });
 
-  if (error) {
+  if (error || !response) {
     $done({
       content: "Network Error",
       backgroundColor: "",
@@ -21,15 +20,17 @@ async function main() {
     return;
   }
 
-  if (response.status === 200) {
+  const status = response.status || response.statusCode;
+
+  if (status === 200 || status === 301 || status === 302) {
     $done({
       content: "Available",
-      backgroundColor: "#000000",
+      backgroundColor: "#412991",
     });
     return;
   }
 
-  if (response.status === 403 || response.status === 451) {
+  if (status === 403 || status === 451) {
     $done({
       content: "Not Available",
       backgroundColor: "",
@@ -38,15 +39,18 @@ async function main() {
   }
 
   $done({
-    content: "Unknown Error",
+    content: `Status ${status}`,
     backgroundColor: "",
   });
 }
 
 (async () => {
-  main()
-    .then((_) => {})
-    .catch((error) => {
-      $done({});
+  try {
+    await main();
+  } catch (e) {
+    $done({
+      content: "Script Error",
+      backgroundColor: "",
     });
+  }
 })();
