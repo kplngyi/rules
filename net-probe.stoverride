@@ -1,22 +1,7 @@
 name: NetProbe
 category: Test
-desc: ｜- 测试是否原生IP；流媒体、AI是否连通
+desc: ｜测试流媒体、AI是否连通
 tiles:
-  - name: IPPure-IP-Info
-    title: IPPure IP Info
-    icon: https://ippure.com/logo.png
-    collapsed: true
-    url: https://ippure.com
-  - name: IPPure-IP-Fraud-Score
-    title: IPPure IP Fraud Score
-    icon: https://ippure.com/logo.png
-    collapsed: true
-    url: https://ippure.com
-  - name: IPPure-IP-Native-Check
-    title: IPPure IP Native Check
-    icon: https://ippure.com/logo.png
-    collapsed: true
-    url: https://ippure.com
   - name: ChatGPT-App-Check
     title: ChatGPT App
     icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
@@ -53,14 +38,6 @@ tiles:
     collapsed: true
     url: https://www.tiktok.com
 
-
-script-providers:
-  IPPure-IP-Info:
-    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/ippure-ip-info.js
-  IPPure-IP-Fraud-Score:
-    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/ippure-ip-fraud-score.js
-  IPPure-IP-Native-Check:
-    url: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/script/ippure-ip-native-check.js
 
   ChatGPT-App-Check:
     url: https://fastly.jsdelivr.net/gh/kplngyi/rules@main/chatgpt-app.js
