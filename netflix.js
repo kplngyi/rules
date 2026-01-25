@@ -49,7 +49,7 @@ async function main() {
 
   $done({
     content: "Not Available",
-    backgroundColor: "",
+    backgroundColor: "#2a2a2a",
   });
 }
 
