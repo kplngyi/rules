@@ -63,7 +63,7 @@ script-providers:
   YouTube-Check:
     url: https://raw.githubusercontent.com/kplngyi/rules/refs/heads/main/youtube.js
   Netflix-Check:
-    url: https://fastly.jsdelivr.net/gh/kplngyi/rules@main/netflix.js
+    url: https://raw.githubusercontent.com/kplngyi/rules/refs/heads/main/netflix.js
   Disney-Check:
     url: https://fastly.jsdelivr.net/gh/kplngyi/rules@main/disney.js
   Gemini-Check:
