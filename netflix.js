@@ -1,35 +1,42 @@
 async function request(method, params) {
-  return new Promise((resolve, reject) => {
-    const httpMethod = $httpClient[method.toLowerCase()];
-    httpMethod(params, (error, response, data) => {
+  return new Promise((resolve) => {
+    const m = method.toLowerCase();
+    if (!$httpClient[m]) {
+      resolve({ error: "Invalid method" });
+      return;
+    }
+    $httpClient[m](params, (error, response, data) => {
       resolve({ error, response, data });
     });
   });
 }
 
 async function checkTitle(id) {
-  const { error, response, data } = await request(
+  const { error, response } = await request(
     "GET",
     `https://www.netflix.com/title/${id}`
   );
 
-  if (error) {
+  if (error || !response || !response.headers) {
     return "";
   }
 
-  let url = response.headers["X-Originating-Url"];
-  if (!url) {
-    return "";
-  }
-  const loc = url.split("/")[3];
-  if (loc === "title") {
-    return "us";
-  }
+  const headers = response.headers;
+  const url =
+    headers["X-Originating-Url"] ||
+    headers["x-originating-url"];
+
+  if (!url) return "";
+
+  const parts = url.split("/");
+  const loc = parts[3] || "";
+
+  if (loc === "title") return "us";
   return loc.split("-")[0];
 }
 
 async function main() {
-  var country = await checkTitle(70143836);
+  let country = await checkTitle(70143836);
   if (country) {
     $done({
       content: `No Restriction (${country.toUpperCase()})`,
@@ -38,10 +45,10 @@ async function main() {
     return;
   }
 
-  var country = await checkTitle(80197526);
-  if (country) {
+  let country2 = await checkTitle(80197526);
+  if (country2) {
     $done({
-      content: `Originals Only (${country.toUpperCase()})`,
+      content: `Originals Only (${country2.toUpperCase()})`,
       backgroundColor: "#2a2a2a",
     });
     return;
@@ -53,10 +60,4 @@ async function main() {
   });
 }
 
-(async () => {
-  main()
-    .then((_) => {})
-    .catch((error) => {
-      $done({});
-    });
-})();
+main().catch(() => $done({}));
