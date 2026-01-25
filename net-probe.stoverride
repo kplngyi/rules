@@ -67,7 +67,7 @@ script-providers:
   OpenAI-Check:
     url: https://fastly.jsdelivr.net/gh/kplngyi/rules@main/openai.js
   YouTube-Check:
-    url: https://fastly.jsdelivr.net/gh/kplngyi/rules@main/youtube.js
+    url: https://raw.githubusercontent.com/kplngyi/rules/refs/heads/main/youtube.js
   Netflix-Check:
     url: https://fastly.jsdelivr.net/gh/kplngyi/rules@main/netflix.js
   Disney-Check:
