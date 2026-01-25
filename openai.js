@@ -13,6 +13,8 @@ async function main() {
     "https://openai.com"
   );
 
+  const status = response && response.status;
+
   if (error) {
     $done({
       content: "Network Error",
@@ -21,24 +23,24 @@ async function main() {
     return;
   }
 
-  if (response.status === 200) {
+  if (status === 200 || status === 301 || status === 302) {
     $done({
-      content: "Available",
+      content: `Available (${status})`,
       backgroundColor: "#412991",
     });
     return;
   }
 
-  if (response.status === 403 || response.status === 451) {
+  if (status === 403 || status === 451) {
     $done({
-      content: "Not Available",
+      content: `Not Available (${status})`,
       backgroundColor: "",
     });
     return;
   }
 
   $done({
-    content: "Unknown Error",
+    content: status ? `Status ${status}` : "Unknown Error",
     backgroundColor: "",
   });
 }
