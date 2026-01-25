@@ -16,7 +16,7 @@ async function main() {
   if (error) {
     $done({
       content: "Network Error",
-      backgroundColor: "",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
@@ -24,7 +24,7 @@ async function main() {
   if (response.status === 200) {
     $done({
       content: "Available",
-      backgroundColor: "#0066CC",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
@@ -32,14 +32,14 @@ async function main() {
   if (response.status === 403 || response.status === 451) {
     $done({
       content: "Not Available",
-      backgroundColor: "",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
 
   $done({
     content: "Unknown Error",
-    backgroundColor: "",
+    backgroundColor: "#2a2a2a",
   });
 }
 
