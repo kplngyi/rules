@@ -3,21 +3,6 @@ category: Test
 desc: ｜测试流媒体、AI是否连通
 icon: https://cdn.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Available_1.png
 tiles:
-  - name: IPPure-IP-Info
-    title: IPPure IP Info
-    icon: https://ippure.com/logo.png
-    collapsed: true
-    url: https://ippure.com
-  - name: IPPure-IP-Fraud-Score
-    title: IPPure IP Fraud Score
-    icon: https://ippure.com/logo.png
-    collapsed: true
-    url: https://ippure.com
-  - name: IPPure-IP-Native-Check
-    title: IPPure IP Native Check
-    icon: https://ippure.com/logo.png
-    collapsed: true
-    url: https://ippure.com
   - name: ChatGPT-App-Check
     title: ChatGPT App
     icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
