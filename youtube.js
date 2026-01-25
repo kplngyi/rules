@@ -16,7 +16,7 @@ async function main() {
   if (error) {
     $done({
       content: "Network Error",
-      backgroundColor: "",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
@@ -28,7 +28,7 @@ async function main() {
   ) {
     $done({
       content: "Not Available",
-      backgroundColor: "",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
@@ -36,14 +36,14 @@ async function main() {
   if (data.toLowerCase().includes("ad-free")) {
     $done({
       content: `Available`,
-      backgroundColor: "#f8f5ec",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
 
   $done({
     content: "Unknown Error",
-    backgroundColor: "",
+    backgroundColor: "#2a2a2a",
   });
 }
 
