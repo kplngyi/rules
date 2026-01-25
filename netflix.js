@@ -33,7 +33,7 @@ async function main() {
   if (country) {
     $done({
       content: `No Restriction (${country.toUpperCase()})`,
-      backgroundColor: "#f8f5ec",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
@@ -42,14 +42,14 @@ async function main() {
   if (country) {
     $done({
       content: `Originals Only (${country.toUpperCase()})`,
-      backgroundColor: "#f8f5ec",
+      backgroundColor: "#2a2a2a",
     });
     return;
   }
 
   $done({
     content: "Not Available",
-    backgroundColor: "#f8f5ec",
+    backgroundColor: "#2a2a2a",
   });
 }
 
