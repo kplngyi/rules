@@ -1,0 +1,100 @@
+# ======================
+# Crypto / Blockchain
+# ======================
+
+# ---- Market / Info ----
+DOMAIN-SUFFIX,aicoin.com
+DOMAIN-SUFFIX,bitcointalk.org
+DOMAIN-SUFFIX,coingecko.com
+DOMAIN-SUFFIX,coinmarketcap.com
+DOMAIN-SUFFIX,glassnode.com
+DOMAIN-SUFFIX,nansen.ai
+DOMAIN-SUFFIX,dune.com
+DOMAIN-SUFFIX,tokeninsight.com
+
+# ---- Explorers / Infra ----
+DOMAIN-SUFFIX,etherscan.io
+DOMAIN-SUFFIX,opensea.io
+DOMAIN-SUFFIX,alchemy.com
+DOMAIN-SUFFIX,infura.io
+
+# ---- Centralized Exchanges ----
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,crypto.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,bitstamp.net
+DOMAIN-SUFFIX,bitfinex.com
+DOMAIN-SUFFIX,bitflyer.com
+DOMAIN-SUFFIX,bithumb.com
+DOMAIN-SUFFIX,gemini.com
+DOMAIN-SUFFIX,kucoin.com
+DOMAIN-SUFFIX,mexc.com
+DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,probit.com
+DOMAIN-SUFFIX,upbit.com
+DOMAIN-SUFFIX,dydx.exchange
+DOMAIN-SUFFIX,uniswap.org
+DOMAIN-SUFFIX,backpack.exchange
+
+# ---- Binance ----
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,yingwangtech.cloud
+
+# ---- OKX / OKEx ----
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okx.me
+DOMAIN-SUFFIX,okx-dns.com
+DOMAIN-SUFFIX,okxcdn.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,okex.me
+
+# ---- Bybit ----
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,bybitglobal.com
+DOMAIN-SUFFIX,bybit-global.com
+DOMAIN-SUFFIX,bybit-api.com
+DOMAIN-SUFFIX,byapps.net
+DOMAIN-SUFFIX,byabcd.com
+DOMAIN-SUFFIX,byabcde.com
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,byd3c3.com
+DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
+DOMAIN-SUFFIX,ffe390afd658c19dcbf707e0597b846d.de
+DOMAIN-SUFFIX,bybit-exchange.github.io
+
+# ---- Bitget ----
+DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitget.site
+DOMAIN-SUFFIX,bitgetapi.com
+DOMAIN-SUFFIX,bitgetcdn.com
+DOMAIN-SUFFIX,bitget.com.cn
+
+# ---- Huobi / HTX ----
+DOMAIN-SUFFIX,huobi.com
+DOMAIN-SUFFIX,huobi.pro
+DOMAIN-SUFFIX,htx.com
+
+# ======================
+# Keyword Fallback (兜底)
+# ======================
+DOMAIN-KEYWORD,binance
+DOMAIN-KEYWORD,okx
+DOMAIN-KEYWORD,okex
+DOMAIN-KEYWORD,bybit
+DOMAIN-KEYWORD,bitget
+DOMAIN-KEYWORD,huobi
+DOMAIN-KEYWORD,htx
+DOMAIN-KEYWORD,crypto
